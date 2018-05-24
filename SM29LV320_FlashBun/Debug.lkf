@@ -1,0 +1,6 @@
+-z -c -m"./Debug/burn.map" -o"./Debug/burn.out" -w -x -i"C:/CCStudio_v3.3/C6000/csl/lib" -i"C:/CCStudio_v3.3/C6000/xdais/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/bios/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/rtdx/lib/c6000" -i"C:/CCStudio_v3.3/C6000/cgtools/lib"
+"F:\project\dsp\dsp.prj\zlg.winxp\SM29LV320_FlashBun\C6416.cmd"
+"F:\project\dsp\dsp.prj\zlg.winxp\SM29LV320_FlashBun\Debug\FlashProgram.obj"
+"F:\project\dsp\dsp.prj\zlg.winxp\SM29LV320_FlashBun\Debug\main.obj"
+"C:\CCStudio_v3.3\C6000\cgtools\lib\rts6400.lib"
+"C:\CCStudio_v3.3\C6000\csl\lib\csl6416.lib"

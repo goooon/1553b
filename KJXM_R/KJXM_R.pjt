@@ -1,0 +1,37 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="E:\HK-1553To485\cankao\KJXM_R\"
+ProjectType=Executable
+CPUFamily=TMS320C64XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="src\bootload.asm"
+Source="Src\Main.c"
+Source="src\vectors.asm"
+Source="src\link.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr"E:\HK-1553To485\cankao\KJXM_R\Debug" -d"_DEBUG" -d"CHIP_6416" -mv6400
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr"E:\HK-1553To485\cankao\KJXM_R\Release" -mv6400
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-q -c -m".\Debug\KJXM.map" -o".\Debug\KJXM.out" -x
+
+["Linker" Settings: "Release"]
+Options=-q -c -m".\Release\KJXM.map" -o".\Release\KJXM.out" -x
+

@@ -1,0 +1,29 @@
+********************************************************************************
+TMS320C6x COFF/Hex Converter                                              v6.0.8
+********************************************************************************
+
+INPUT FILE NAME: <.\Debug\C6416_Bootload.out>
+OUTPUT FORMAT:   Binary
+
+PHYSICAL MEMORY PARAMETERS
+   Default data width   :   8
+   Default memory width :   8
+   Default output width :   8
+
+BOOT LOADER PARAMETERS
+   Table Address: 0x64000400, PAGE 0
+   Entry Point  : 0x3c80
+
+
+OUTPUT TRANSLATION MAP
+--------------------------------------------------------------------------------
+64000000..6400ffff  Page=0  Memory Width=8  ROM Width=8  "FLASH"
+--------------------------------------------------------------------------------
+   OUTPUT FILES: .\Bin\C6416_Bootload.bin [b0..b7]
+
+   CONTENTS: 64000000..6400009f   .bootload
+             640000a0..640003ff   FILL = 00000000
+             64000400..640045bb   BOOT TABLE
+                            .text : btad=64000400  dest=00000400 size=00003ac0
+                           .cinit : btad=64003ecc  dest=00006678 size=000006e4
+             640045bc..6400ffff   FILL = 00000000

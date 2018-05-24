@@ -1,0 +1,40 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="F:\project\dsp\dsp.prj\zlg\SM29LV320_FlashBun\"
+ProjectType=Executable
+CPUFamily=TMS320C64XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="FlashProgram.c"
+Source="main.c"
+Source="vectors.asm"
+Source="C6416.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -pdsw225 -fr"$(Proj_dir)\Debug" -d"_DEBUG" -d"CHIP_6416" -mv6400
+
+["Compiler" Settings: "Release"]
+Options=-pdsw225 -o3 -fr"$(Proj_dir)\Release" -mv6400
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-Dconfig.importPath="$(Install_dir)/bios_5_31_02/packages;"
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\DspFlashBurn.map" -o".\Debug\DspFlashBurn.out" -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\DspFlashBurn.map" -o".\Release\DspFlashBurn.out" -w -x
+
+["C6416.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["C6416.cmd" Settings: "Release"]
+LinkOrder=1
+

@@ -1,0 +1,32 @@
+********************************************************************************
+TMS320C6x COFF/Hex Converter                                              v6.0.8
+********************************************************************************
+
+INPUT FILE NAME: <.\Debug\KJXM.out>
+OUTPUT FORMAT:   Binary
+
+PHYSICAL MEMORY PARAMETERS
+   Default data width   :   8
+   Default memory width :   8
+   Default output width :   8
+
+BOOT LOADER PARAMETERS
+   Table Address: 0x64000400, PAGE 0
+   Entry Point  : 0x285c0
+
+
+OUTPUT TRANSLATION MAP
+--------------------------------------------------------------------------------
+64000000..6400ffff  Page=0  Memory Width=8  ROM Width=8  "FLASH"
+--------------------------------------------------------------------------------
+   OUTPUT FILES: .\Bin\Flash.bin [b0..b7]
+
+   CONTENTS: 64000000..6400009f   .bootload
+             640000a0..640003ff   FILL = 00000000
+             64000400..6400d377   BOOT TABLE
+                          .vector : btad=64000400  dest=0002b400 size=00000200
+                            .text : btad=6400060c  dest=0001c6a0 size=0000c440
+                           .cinit : btad=6400ca54  dest=0002aae0 size=000008a4
+                           .const : btad=6400d300  dest=0002b3d0 size=00000016
+                          .switch : btad=6400d320  dest=0002b384 size=0000004c
+             6400d378..6400ffff   FILL = 00000000

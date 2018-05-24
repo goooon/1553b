@@ -1,0 +1,101 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="F:\project\dsp\dsp.prj\zlg\SM29LV320_FlashBun\"
+ProjectType=Executable
+CPUFamily=TMS320C64XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="C:\CCStudio_v3.3\C6000\cgtools\lib\rts6400.lib"
+Source="C:\CCStudio_v3.3\C6000\csl\lib\csl6416.lib"
+Source="FlashProgram.c"
+Source="main.c"
+Source="src\BU61580\BU61580.h"
+Source="src\BU61580\reg.h"
+Source="src\tool\delay.h"
+Source="src\tool\Event.h"
+Source="src\tool\Queue.h"
+Source="src\tool\timer.h"
+Source="src\tool\tracer.h"
+Source="src\tool\type.h"
+Source="src\uart\uart.h"
+Source="C6416.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -pdsw225 -fr"$(Proj_dir)\Debug" -d"_DEBUG" -d"CHIP_6416" -mv6400
+
+["Compiler" Settings: "Release"]
+Options=-pdsw225 -o3 -fr"$(Proj_dir)\Release" -d"CHIP_6416" -mv6400
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\burn.map" -o".\Debug\burn.out" -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\zlg.map" -o".\Release\zlg.out" -w -x
+
+["src\BU61580\BU61580.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["src\BU61580\BU61580.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["src\BU61580\reg.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["src\BU61580\reg.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["src\tool\delay.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["src\tool\delay.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["src\tool\Event.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["src\tool\Event.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["src\tool\Queue.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["src\tool\Queue.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["src\tool\timer.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["src\tool\timer.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["src\tool\tracer.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["src\tool\tracer.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["src\tool\type.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["src\tool\type.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["src\uart\uart.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["src\uart\uart.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["C6416.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["C6416.cmd" Settings: "Release"]
+LinkOrder=1
+

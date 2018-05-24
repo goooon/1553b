@@ -1,0 +1,11 @@
+menuitem "My Functions";
+
+hotmenu SaveMemory(){ 
+	GEL_MemorySave(0x80000000, 0, 0x00100000/2, "D:\\≤‚ ‘ÕºœÒ0x55 20151116_1.dat", 1); 
+} 
+
+
+hotmenu Out2hex()
+{	
+	GEL_System("hex6x.exe BOOT_HEX.cmd ");
+}

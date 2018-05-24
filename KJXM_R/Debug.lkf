@@ -1,0 +1,5 @@
+-z -q -c -m"./Debug/KJXM.map" -o"./Debug/KJXM.out" -x -i"D:/Program Files/CCS3.3/C6000/csl/lib" -i"D:/Program Files/CCS3.3/C6000/xdais/lib" -i"D:/Program Files/CCS3.3/bios_5_31_02/packages/ti/bios/lib" -i"D:/Program Files/CCS3.3/bios_5_31_02/packages/ti/rtdx/lib/c6000" -i"D:/Program Files/CCS3.3/C6000/cgtools/lib"
+"E:\HK-1553To485\cankao\KJXM_R\Debug\bootload.obj"
+"E:\HK-1553To485\cankao\KJXM_R\Debug\Main.obj"
+"E:\HK-1553To485\cankao\KJXM_R\Debug\vectors.obj"
+"E:\HK-1553To485\cankao\KJXM_R\src\link.cmd"

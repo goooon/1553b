@@ -1,0 +1,10 @@
+-----------------------------  KJXM_R.pjt - Debug  -----------------------------
+[bootload.asm] "D:\Program Files\CCS3.3\C6000\cgtools\bin\cl6x" -g -q -fr"E:/HK-1553To485/cankao/KJXM_R/Debug" -d"_DEBUG" -d"CHIP_6416" -mv6400 -@"../Debug.lkf" "bootload.asm"
+
+[Main.c] "D:\Program Files\CCS3.3\C6000\cgtools\bin\cl6x" -g -q -fr"E:/HK-1553To485/cankao/KJXM_R/Debug" -d"_DEBUG" -d"CHIP_6416" -mv6400 -@"../Debug.lkf" "Main.c"
+
+[Linking...] "D:\Program Files\CCS3.3\C6000\cgtools\bin\cl6x" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.
