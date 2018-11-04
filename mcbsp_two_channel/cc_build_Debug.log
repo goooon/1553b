@@ -1,0 +1,16 @@
+------------------------------  zlg.pjt - Debug  ------------------------------
+[main.c] "C:\CCStudio_v3.3\C6000\cgtools\bin\cl6x" -g -pdsw225 -fr"F:/workspace/github.1553b/mcbsp_two_channel/Debug" -d"_DEBUG" -d"CHIP_6416" -mv6400 -@"../Debug.lkf" "main.c"
+"main.c", line 102: warning: variable "i" was declared but never referenced
+"main.c", line 103: warning: variable "j" was declared but never referenced
+"main.c", line 412: warning: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+"main.c", line 505: warning: argument of type "char *" is incompatible with parameter of type "u8 *"
+"main.c", line 507: warning: function declared implicitly
+"main.c", line 538: warning: function declared implicitly
+"main.c", line 460: warning: variable "i" was set but never used
+"main.c", line 591: warning: last line of file ends without a newline
+
+[Linking...] "C:\CCStudio_v3.3\C6000\cgtools\bin\cl6x" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 8 Warnings, 0 Remarks.
